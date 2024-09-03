@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmation de Déconnexion</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #F5F5F5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #FFFFFF;
+            padding: 20px;
+            border-radius: 10px;
+            width: 400px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+            color: #E74C3C;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 20px 0;
+            color: #555;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #FFFFFF;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .button-yes {
+            background-color: #27AE60;
+        }
+
+        .button-no {
+            background-color: #E74C3C;
+        }
+
+        .button-yes:hover {
+            background-color: #2ECC71;
+        }
+
+        .button-no:hover {
+            background-color: #C0392B;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Êtes-vous sûr de vouloir vous déconnecter ?</h1>
+        <p>Vos modifications non enregistrées seront perdues.</p>
+        <form action="logout.cgi" method="post" style="display:inline;">
+            <button type="submit" class="button button-yes">Oui</button>
+        </form>
+        <form action="menu.html" method="get" style="display:inline;">
+            <button type="submit" class="button button-no">Non</button>
+        </form>
+    </div>
+</body>
+</html>

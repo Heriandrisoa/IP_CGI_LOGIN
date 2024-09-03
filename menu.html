@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="login-container">
+        <form class="login-form" method="post" action="login.cgi">
+            <h2>Connectez-vous</h2>
+            <div class="input-group">
+                <input type="text" id="username" name="username" placeholder="" required>
+                <label for="username">Nom d'utilisateur</label>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" name="password" placeholder="" required>
+                <label for="password">Mot de passe</label>
+            </div>
+            <button type="submit">Connexion</button>
+            <p class="signup-link">Pas encore inscrit ? <a href="creer_un_compte.html">Créez un compte</a></p>
+        </form>
+    </div>
+</body>
+</html>
